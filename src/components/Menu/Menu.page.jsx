@@ -1,35 +1,31 @@
 import React from 'react'
-
+import './Menu.page.scss'
 export default function Menu() {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home  </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container-fluid">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <a className="navbar-brand menu-logo"  href="#">
+                        <img className="full-logo img-fluid" src="./assets/logo/ubisoft-logo.jpeg" />
+                    </a>
+
+                    <div className=" navbar-collapse collapse" id="navbarTogglerDemo03">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li className="menu-link"><a href="#">Uplay+</a></li>
+                        <li className="menu-link"><a href="#">Store</a></li>
+                        <li className="menu-link"><a href="#">More Games</a></li>
+                        <li className="menu-link"><a href="#">News</a></li>
+                        <li className="menu-link"><a href="#">Forums</a></li>
+                        <li className="menu-link"><a href="#">Support</a></li>
+                         
                     </ul>
+                                    
+                    </div>
+
+                    
                 </div>
             </nav>
         </div>

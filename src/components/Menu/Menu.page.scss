@@ -1,0 +1,42 @@
+.full-logo{    
+    width: 100px;
+    height: auto;
+    margin-left: 40px;
+    
+}
+
+.bg-dark{
+    background-color:black !important;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: block;
+}
+
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    
+}
+
+.menu-link{
+    a{
+        color:white;
+        text-decoration: none !important;
+        text-transform: uppercase;
+    }
+    margin-left:30px
+}
+@media only screen and (max-width: 990px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+        display: block;
+    }
+  }
