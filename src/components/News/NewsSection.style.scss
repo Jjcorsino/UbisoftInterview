@@ -1,0 +1,39 @@
+.news-section-title{
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+    h2{
+        font-weight: 700;
+    }
+}
+
+.filterName{
+    text-align: center;
+    text-transform: uppercase;
+    color:#d50063;
+    margin: 20px;
+    li{
+        display:inline;
+        margin: 0px 20px;
+
+    }
+    ul{overflow:hidden}
+
+   
+}
+
+.news-img{
+    padding: 10px;
+}
+
+.news-detail{
+    p{
+        margin: 0px;
+        margin-top: 5px;
+        margin-left:10px;
+        color: gray;
+    }
+    h4{
+        margin-left:10px;
+    }
+}

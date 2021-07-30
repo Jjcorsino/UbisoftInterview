@@ -11,7 +11,7 @@ export default function GameSection() {
             
             <GameSlider />
 
-            <div class="row">
+            <div class="row m-0 p-0">
                 <div class="col text-center">
                 <button class="btn btn-more">View All Games</button>
                 </div>

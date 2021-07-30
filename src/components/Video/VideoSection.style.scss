@@ -1,0 +1,23 @@
+.video-section{
+    background-color: #eaf3f0;
+}
+
+.video-section-title{
+    text-transform: uppercase;
+    padding: 50px;
+    text-align: center;
+    h2{
+        font-weight: 700;
+    }
+}
+
+.img {
+    position: relative;
+  }
+  
+  .img-icon-play {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
