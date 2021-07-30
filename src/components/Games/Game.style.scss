@@ -16,3 +16,42 @@
     height: 15px;
     margin-right: 5px;
 }
+
+.card-body{
+    background-color: #eaf3f0;
+}
+
+.slider-arrow{
+    
+}
+
+
+// game section
+
+.game-section{
+    background-color: #eaf3f0;
+}
+
+.game-section-title{
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+    h2{
+        font-weight: 700;
+    }
+}
+
+.clear{
+    clear: both;
+}
+
+.btn-more{
+    text-align: center;
+    background-color:#d50063;
+    color:white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin:  25px;
+    text-transform: uppercase;
+
+}

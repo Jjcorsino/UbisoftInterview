@@ -8,7 +8,7 @@ export default function GameCard() {
                 <div className="card-body p-0">
                     <h5 className="card-title mt-3">Far Cry 6</h5>
                     <p className="card-status m-0">Comming soon</p>
-                   
+                
                     <div className="card-available">
                         <img className="card-icon" src="./assets/xbox.svg" />
                         <img className="card-icon" src="./assets/ps4.svg" />

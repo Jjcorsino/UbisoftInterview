@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
 import Menu from '../../components/Menu/Menu.page';
-import GameSlider from '../../components/Games/GameSlider';
+
+import GameSection from '../../components/Games/GameSection.page';
 const Home = () => {
     return(
         <>
             <Menu/>
-            <GameSlider/>
+            <GameSection/>
         </>
     );
 }

@@ -16,14 +16,14 @@ export default function GameSlider() {
             <Carousel
                 plugins={[
                     'clickToChange',
-                    'centered',
+                    
                     'infinite',
                     {
                         resolve: arrowsPlugin,
                         options: {
-                        arrowLeft: <button><FontAwesomeIcon icon={faAngleLeft} /></button>,
+                        arrowLeft: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleLeft} /></button>,
                          
-                        arrowRight: <button><FontAwesomeIcon icon={faAngleRight} /></button>,
+                        arrowRight: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleRight} /></button>,
                          
                         addArrowClickHandler: true,
                         }},
@@ -34,14 +34,62 @@ export default function GameSlider() {
                     }
                     },
                 ]}
+                breakpoints={{
+                    640: {
+                    plugins: [
+                        'clickToChange',
+                        'infinite',
+                        {
+                        resolve: arrowsPlugin,
+                        options: {
+                            arrowLeft: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleLeft} /></button>,
+                            
+                            arrowRight: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleRight} /></button>,
+                            
+                            addArrowClickHandler: true,
+                        }},
+                        {
+                            resolve: slidesToShowPlugin,
+                            options: {
+                            numberOfSlides: 3
+                            }
+                        },
+                        ]
+                    },
+                    900: {
+                    plugins: [
+                        'clickToChange',
+                        'infinite',
+                        {
+                        resolve: arrowsPlugin,
+                        options: {
+                        arrowLeft: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleLeft} /></button>,
+                         
+                        arrowRight: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleRight} /></button>,
+                         
+                        addArrowClickHandler: true,
+                        }},
+                    {
+                        resolve: slidesToShowPlugin,
+                        options: {
+                        numberOfSlides: 4
+                        }
+                    },
+                    ]
+                    }
+                }}
                 >
-                    <div>
-                        <GameCard/>
-                    </div>
+                   
                     <div><GameCard/></div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
+                    <div><GameCard/></div>
             </Carousel>
         </div>
     )
