@@ -9,9 +9,9 @@ const Home = () => {
     return(
         <>
             <Menu/>
-            {/* <GameSection/> */}
+            <GameSection/>
             <NewsSection/>
-            {/* <VideoSection/> */}
+            <VideoSection/>
         </>
     );
 }

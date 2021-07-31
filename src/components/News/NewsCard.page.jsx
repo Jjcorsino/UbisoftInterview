@@ -1,18 +1,34 @@
 import React from 'react'
 
-export default function NewsCard() {
+export default function NewsCard(props) {
+
+   
+
     return (
-        <div className="col-md-12 col-sm-12  d-flex mb-4" >
-            <div className="col-6 news-img d-inline-block">
-                <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+        
+        <div className="col-12   d-xs-flex d-sm-flex d-md-flex d-lg-flex mb-4" >
+
+
+            {props.align&&(
+                <div className="d-none d-sm-none d-md-block  news-img ">
+                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+                </div> 
+            )}
+            <div className="d-xs-block d-sm-block d-md-none  news-img ">
+                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
             </div> 
-            <div className="col-6 news-img d-inline-block">
+            <div className="col-md-6  news-img ">
                 <div className="news-detail">
-                    <p>October 9,2020</p>
-                    <h4>Animating the future - Developer Interview</h4>
+                    <p>{props.news.date}</p>
+                    <h4>{props.news.title}</h4>
                 </div>
             </div>
+            {!props.align&&(
+                <div className="d-none d-sm-none d-md-block   news-img ">
+                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+                </div> 
+            )}
         </div>
-
+        
     )
 }

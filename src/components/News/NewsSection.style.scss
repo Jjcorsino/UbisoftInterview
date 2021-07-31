@@ -1,6 +1,7 @@
 .news-section-title{
     text-transform: uppercase;
     padding-top: 50px;
+    
     text-align: center;
     h2{
         font-weight: 700;
@@ -14,10 +15,15 @@
     margin: 20px;
     li{
         display:inline;
-        margin: 0px 20px;
+        margin: 0px 10px;
+        text-align: center;
+        align-items: stretch;
 
     }
-    ul{overflow:hidden}
+    ul{
+        overflow:hidden;
+        padding-left: 0px;
+    }
 
    
 }
@@ -29,11 +35,11 @@
 .news-detail{
     p{
         margin: 0px;
-        margin-top: 5px;
-        margin-left:10px;
+        // margin-top: 5px;
+        // margin-left:10px;
         color: gray;
     }
     h4{
-        margin-left:10px;
+        // margin-left:10px;
     }
 }

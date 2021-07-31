@@ -18,15 +18,7 @@ export default function VideoSlider() {
                     
                     
                     'infinite',
-                    {
-                        resolve: arrowsPlugin,
-                        options: {
-                        arrowLeft: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleLeft} /></button>,
-                         
-                        arrowRight: <button className="slider-arrow"><FontAwesomeIcon icon={faAngleRight} /></button>,
-                         
-                        addArrowClickHandler: true,
-                        }},
+                     
                     {
                     resolve: slidesToShowPlugin,
                     options: {
