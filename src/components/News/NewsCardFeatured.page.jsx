@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NewsCardFeatured() {
     return (
-        <div className="col-md-12 col-sm-12" >
+        <div className="col-12 " >
             <div className="col-12 news-img">
                 <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
             </div> 

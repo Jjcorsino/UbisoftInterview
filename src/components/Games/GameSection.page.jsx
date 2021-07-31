@@ -2,6 +2,9 @@ import React from 'react'
 
 import GameSlider from './GameSlider'
 export default function GameSection() {
+
+    
+
     return (
         <div className="game-section">
             <div className="game-section-title">

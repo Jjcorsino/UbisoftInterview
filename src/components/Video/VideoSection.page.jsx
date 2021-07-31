@@ -9,10 +9,8 @@ export default function VideoSection() {
                 <h2>Featured Videos</h2>
             </div>
 
-            <div className="container">
-                <VideoSlider />
-            </div>
-            <div class="row m-0 p-0">
+                 <VideoSlider />
+             <div class="row m-0 p-0">
                 <div class="col text-center">
                 <button class="btn btn-more">View All Trailers</button>
                 </div>

@@ -11,11 +11,11 @@ export default function NewsCard(props) {
 
             {props.align&&(
                 <div className="d-none d-sm-none d-md-block  news-img ">
-                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+                    <img className="img-fluid" src={props.news.image} />
                 </div> 
             )}
             <div className="d-xs-block d-sm-block d-md-none  news-img ">
-                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+                    <img className="img-fluid" src={props.news.image} />
             </div> 
             <div className="col-md-6  news-img ">
                 <div className="news-detail">
@@ -25,7 +25,7 @@ export default function NewsCard(props) {
             </div>
             {!props.align&&(
                 <div className="d-none d-sm-none d-md-block   news-img ">
-                    <img className="img-fluid" src="./assets/news-image-sample-1.jpg" />
+                    <img className="img-fluid" src={props.news.image} />
                 </div> 
             )}
         </div>

@@ -13,42 +13,39 @@ export default function NewsSection() {
         {
             "title":"Animating the future - Developer Interview",
             "date":"october 9, 2020",
-            "img":"",
+            "image":"./assets/news-image-sample-1.jpg",
         },
         {
             "title":"Rabbids Coding Crashes onto mobile six",
             "date":"october 8, 2020",
-            "img":"",
+            "image":"./assets/news-image-sample-3.jpg",
         },
         {
             "title":"BIPOC of Ubisoft - Fatim Aissatou Diop ghost",
             "date":"october 9, 2020",
-            "img":"",
+            "image":"./assets/news-image-sample-2.jpg",
         },
         {
             "title":"For Honor will be playable on next-gen consoles",
             "date":"october 8, 2020",
-            "img":"",
+            "image":"./assets/news-image-sample-4.png",
         },
         {
             "title":"watch dogs : Legion - new story about details and post-launch plans revealed",
             "date":"october 6, 2020",
-            "img":"",
+            "image":"./assets/news-image-sample-5.jpg",
         },
     ]
     
 
-    NewsData.filter(news =>{
-        // var titleArr = (news.title).split(" ")
-        // titleArr = titleArr.map(function (e) { 
-        //     return e.toUpperCase()
-        // });
+    // NewsData.filter(news =>{
+      
         
-        return (news.title).toUpperCase().split(" ").some( val =>
-            filterData.indexOf(val) >= 0
-        )
+    //     return (news.title).toUpperCase().split(" ").some( val =>
+    //         filterData.indexOf(val) >= 0
+    //     )
         
-    }).map(news => console.log(news))
+    // }).map(news => console.log(news))
 
 
     
@@ -88,23 +85,7 @@ export default function NewsSection() {
 
                 </ul>
             </div>
-            {/* {console.log(filterData)} */}
-            {/* {console.log("hi",NewsData.some( ai => ["future"].includes(ai.title.split(" ")) ))}
-            {NewsData.filter(news => news.title.split(" ").some( ai => ["future"].includes(ai.title.split(" ")) )).map(filteredName => (
-                console.log("filter",filteredName)
-            ))} */}
-
-            {/* {NewsData.filter(news =>{
-                let titleArr = (news.title).split(" ")
-                titleArr = titleArr.map(function (e) { 
-                    return e.toUpperCase()
-                });
-                titleArr.some( val =>
-                    filterData.indexOf(val) >= 0
-                )
-                
-            }).map(news => {return news})
-            } */}
+            
 
             {!filterStatus&&(
                 <div className="container">
@@ -118,7 +99,7 @@ export default function NewsSection() {
                             />
                         </div>
                     </div>
-                     <div className="col-md-6 col-sm-12" >
+                     <div className="col-md-6 col-sm-12 p-0" >
                         <NewsCard
                             align = {!inverted}
                             news = {NewsData[2]}
@@ -148,7 +129,7 @@ export default function NewsSection() {
                         }).map((data,i) => {
                             
                             return(
-                                <div className="col-md-6 col-sm-12" >
+                                <div className="col-md-6 col-sm-12 p-0" >
                                     <NewsCard 
                                         align={trueAlign.includes(i)}
                                         news={data}
