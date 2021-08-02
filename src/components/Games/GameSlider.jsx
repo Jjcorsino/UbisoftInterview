@@ -11,7 +11,8 @@ import GameCard from './GameCard.page';
 
 
 export default function GameSlider() {
-
+    // Hardcoded value of all games in array 
+    // Fetch this array from any database and we can set dynamic game cards in slider
     const GameData = [
         {
             "name":"Prince of Persia: The Sands of Time Remake" ,
@@ -98,18 +99,16 @@ export default function GameSlider() {
 
     return (
         <div>
+        {/* dynamic responsive carousel  */}
             <Carousel
                 plugins={[
                     'clickToChange',
-                    
                     'infinite',
                     {
                         resolve: arrowsPlugin,
                         options: {
                         arrowLeft: <button className="slider-arrow slider-arrow-left"><FontAwesomeIcon icon={faAngleLeft} /></button>,
-                         
                         arrowRight: <button className="slider-arrow slider-arrow-right"><FontAwesomeIcon icon={faAngleRight} /></button>,
-                         
                         addArrowClickHandler: true,
                         }},
                     {
@@ -124,14 +123,11 @@ export default function GameSlider() {
                     plugins: [
                         'clickToChange',
                         'infinite',
-                         
                         {
                         resolve: arrowsPlugin,
                         options: {
                             arrowLeft: <button className="slider-arrow slider-arrow-left"><FontAwesomeIcon icon={faAngleLeft} /></button>,
-                         
-                         arrowRight: <button className="slider-arrow slider-arrow-right"><FontAwesomeIcon icon={faAngleRight} /></button>,
-                            
+                            arrowRight: <button className="slider-arrow slider-arrow-right"><FontAwesomeIcon icon={faAngleRight} /></button>,
                             addArrowClickHandler: true,
                         }},
                         {
@@ -165,15 +161,15 @@ export default function GameSlider() {
                     }
                 }}
                 >
-                   {GameData.map(game=>{
+                {/* Map all Game card in carousel */}
+                {GameData.map(game=>{
                         return(
                         <div className="">
                             <GameCard
                                 data = {game}
                             />
                         </div>)
-                   })}
-                    
+                })}
                     
             </Carousel>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function GameCard(props) {
+    // Display Single Game Card component 
     return (
         <div className="game-card">
             <div className="card border-0 ">

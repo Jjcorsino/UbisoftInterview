@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import Menu from '../../components/Menu/Menu.page';
 
@@ -8,10 +8,11 @@ import NewsSection from '../../components/News/NewsSection.page';
 const Home = () => {
     return(
         <>
-            <Menu/>
-            <GameSection/>
-            <NewsSection/>
-            <VideoSection/>
+            
+            <Menu/>             {/* Display Navbar Menu  */}
+            <GameSection/>      {/* Display Explore More Game Section and slider */}
+            <NewsSection/>      {/* Display Latest News Section with filter */}
+            <VideoSection/>     {/* Display Video section */}
         </>
     );
 }

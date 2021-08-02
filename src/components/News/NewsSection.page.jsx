@@ -5,10 +5,13 @@ import NewsCardFeatured from './NewsCardFeatured.page'
 import NewsCard from './NewsCard.page'
 export default function NewsSection() {
 
-    const [filterData,setFilterData] = useState("all");
+    const [filterData,setFilterData] = useState("all"); 
     const [filterStatus,setFilterStatus] = useState(false);
-    const [inverted,setInverted] = useState(false);
+    const inverted = false;
+    // post index that has photo on left side
     const trueAlign = [0,1,4,5,8,9]
+
+    // Hardcoded value of all news data to pass it in different section
     const NewsData = [
         {
             "title":"Animating the future - Developer Interview",
@@ -38,16 +41,7 @@ export default function NewsSection() {
     ]
     
 
-    // NewsData.filter(news =>{
-      
-        
-    //     return (news.title).toUpperCase().split(" ").some( val =>
-    //         filterData.indexOf(val) >= 0
-    //     )
-        
-    // }).map(news => console.log(news))
-
-
+  
     
 
     return (
@@ -57,6 +51,7 @@ export default function NewsSection() {
             </div>
             <div className="filterName ">
                 <ul>
+                {/* set filter on all click event of tags */}
                     <li className="nav-item" onClick={()=>{
                         setFilterData("all")
                         setFilterStatus(false);
@@ -86,13 +81,15 @@ export default function NewsSection() {
                 </ul>
             </div>
             
-
+            {/* if no filter set then show all posts with one featured post */}
             {!filterStatus&&(
                 <div className="container">
                 <div class="row">
                     <div className="col-md-6 col-sm-12" >
                         <div class="row">
-                            <NewsCardFeatured/>
+                            <NewsCardFeatured
+                                 news = {NewsData[0]}
+                            />
                             <NewsCard 
                                 align = {inverted}
                                 news = {NewsData[1]}
@@ -117,7 +114,7 @@ export default function NewsSection() {
                 </div>
             )
             }
-
+            {/* Filter is on and display post with list */}
             {filterStatus&&(
                 <div className="container">
                     <div class="row">
@@ -146,29 +143,7 @@ export default function NewsSection() {
                 </div>
             )
             }
-            
-                    
-
-
-
-                {/* <div class="row">
-                    
-                     <div className="col-md-6 col-sm-12" >
-                        <NewsCard/>
-                        </div>
-                        <div className="col-md-6 col-sm-12" >
-                        <NewsCard/>
-                        </div>
-                        <div className="col-md-6 col-sm-12" >
-                        <NewsCard/>
-                        </div>
-                        <div className="col-md-6 col-sm-12" >
-                        <NewsCard/>
-                        </div>
-                          
-                </div> */}
-             {/* </div> */}
-
+          
              <div class="row m-0 p-0">
                 <div class="col text-center">
                 <button class="btn btn-more">All News</button>
