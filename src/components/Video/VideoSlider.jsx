@@ -16,19 +16,16 @@ export default function VideoSlider() {
     // Hardcoded Video data with border color of image
     const VideoData = [
         {
-            "title":"Rainbow Six: Siega: Operation Steel Wave Reveal",
-            "image":"./assets/featured-videos-sample-1.jpg",
-            "border":"yellow"
+            "title":"Roller Champions Game Overview Trailer",
+            "image":"./assets/rollerchamps-trailer.png",
         },
         {
-            "title":"Assassin's Creed Valhalla: Cinematic World Premiere Trailer",
-            "image":"./assets/featured-videos-sample-2.jpg",
-            "border":"skyblue"
+            "title":"Rider Republic Showdown Trailer",
+            "image":"./assets/riders-showdown-trailer.jpg",
         },
         {
-            "title":"Rabbids Coding: Free Lessons Through Puzzle Solving",
-            "image":"./assets/featured-videos-sample-3.jpg",
-            "border":"yellow"
+            "title":"Sprinter Cell Remake: Stepping Out of the Shadows",
+            "image":"./assets/sprinter-cell-trailer.png",
         },
     ]
     return (
@@ -36,8 +33,6 @@ export default function VideoSlider() {
         {/* Responsive slider with 3 News and no arrow in desktop but display single card in mobile with action arrow */}
             <Carousel
                 plugins={[
-                    
-                    
                     'infinite',
                      
                     {

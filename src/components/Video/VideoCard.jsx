@@ -17,12 +17,12 @@ export default class GameCard extends Component {
         const {isOpen } = this.state;
 
         return (
-        <div>
+        <div className='video-card-container'>
             <div className="card border-0 m-4" >
                 <div type="button" onClick={() => this.setState({ isOpen: true })}>
                     <div className="img">
                         <img className="img-icon-play" src="./assets/download.svg" alt="..."/>
-                        <img src={this.props.data.image} style={{border:"5px solid",borderColor:this.props.data.border}} className="card-img-top" alt="..." />
+                        <img src={this.props.data.image} className="card-img-top" alt="..." />
                     </div>
                 </div>
                 <div className="card-body p-0">

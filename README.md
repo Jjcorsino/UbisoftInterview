@@ -1,24 +1,50 @@
 # Getting Started with this project
 
-## Live Demo [Click Here](https://ubisoft-interview.herokuapp.com/)
+```
+This repository was created based on @harshranpariya's repository, just for the purpose of practicing react.
+```
+[harshranpariyaRepo](https://github.com/harshranpariya/UbisoftInterview) 
 
 
-## step : 1 clone this repository
-## step : 2 npm install
-
-## step : 3 npm run
+## [Ubisoft page](https://www.ubisoft.com/en-us/)
 
 
-## Website will appear 
+## Live Demo [Click Here](https://ubisoftjjcorsino.netlify.app/)
+```
+    - clone this repository
+    - npm install
+    - npm run start
+```
 
-## check screenshots in "screenshots" folder
+
+#### Website will appear 
 
 
-## Web View
 
+To do:
+
+- [ ] Add Socials section
+- [ ] Add Footer section
+- [ ] Update css
+- [ ] Responsive design
+- [ ] Mobile view version 2
+
+
+
+<hr>
+
+
+## Web view (New version)
+
+![](/screenshots/version2.png)
+
+<hr>
+
+## Web View harshranpariya's Version
+Outdated
 ![Alt text](/screenshots/web-view.png "Web view")
 
 
 ## Mobile View
-
+Outdated
 ![Alt text](/screenshots/mobile-view.png "Mobile View")
