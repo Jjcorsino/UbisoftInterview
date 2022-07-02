@@ -29,6 +29,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 30vh;
 }
 .hero-tittle > h1{
     color: #fff;
@@ -42,14 +43,17 @@
     text-shadow: 0 2px 10px #000;
     padding-bottom: 20px;
 }
-.hero-sub-tittle > h2{
+.hero-sub-tittle{
     width: 75%;
     margin: auto;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 0;
-    text-align: center; 
-    text-shadow: 0 2px 10px #000;
+    h2{
+        font-size: 1.5rem;
+        padding: 0;
+        text-align: center; 
+        text-shadow: 0 2px 10px #000;
+
+    }
 }
 .hero-buttons{
     margin: 0;
@@ -80,6 +84,10 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 30vh;
+}
+.hero-logo{
+    padding-top: 40%;
 }
 .hero-btn-one-Rabbids, .hero-btn-two-Rabbids{
     background-color: rgb(222, 23, 2);
@@ -99,7 +107,7 @@
         color: #fff;
     }
 }
-.hero-btn-one-ubisoft-store, .hero-btn-two-ubisoft-store{
+.hero-btn-one-ubisoft-store{
     background-color: rgb(255, 13, 120);
     color: #fff;
     font-size: 1rem;
@@ -116,6 +124,10 @@
         background-color: rgb(243, 88, 158);
         color: #fff;
     }
+}
+.hero-btn-two-ubisoft-store{
+    visibility: hidden;
+    background-color: transparent;
 }
 
 .hero-btn-one-assassins-creed, .hero-btn-two-assassins-creed{
@@ -244,7 +256,7 @@
         color: #fff;
     }
 }
-.hero-btn-one-ubisoft-plus, .hero-btn-two-ubisoft-plus{
+.hero-btn-one-ubisoft-plus{
     background-color: rgb(66, 142, 224);
     color: #fff;
     font-size: 1rem;
@@ -261,6 +273,10 @@
         background-color: rgb(66, 142, 224);
         color: #fff;
     }
+}
+.hero-btn-two-ubisoft-plus{
+    visibility: hidden;
+    background-color: transparent;
 }
 .hero-btn-one-roller-champions, .hero-btn-two-roller-champions{
     background-color: rgb(61, 36, 156);
@@ -281,9 +297,3 @@
     }
 }
 
-.css-1g04gm2-MuiButtonBase-root-MuiIconButton-root{
-    background-color: transparent !important;
-    padding: 0!important;
-    margin: 0 !important;
-    border-radius: 0!important;
-}

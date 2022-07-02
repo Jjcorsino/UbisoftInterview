@@ -2,8 +2,6 @@ import React from "react";
 import HeroCard from "./HeroCard";
 import Carousel from "react-material-ui-carousel";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSlider = () => {
   // Hardcoded value of all heros in array
@@ -22,7 +20,7 @@ const HeroSlider = () => {
       tittle: "SAVE UP TO 80% OFF THIS SUMMER!",
       subtittle: "Beat the heat with these sweet deals",
       buttonOne: "shop now",
-      buttonTwo: "shop now",
+      buttonTwo: "",
       game: "ubisoft-store",
       imageBackground:
         "./assets/ubi-homescreen-store-summer_sale22-bg-desktop.jpg",
@@ -101,7 +99,7 @@ const HeroSlider = () => {
       subtittle:
         "Celebrate 15 years of legendary, history-bending adventures. Play all of the Assassin's Creed games with Ubisoft+!",
       buttonOne: "subscribe now",
-      buttonTwo: "suscribe now",
+      buttonTwo: "",
       game: "ubisoft-plus",
       imageBackground: "./assets/ubi-homescreen-ubiplus-bg-desktop.jpg",
       logoGame: "./assets/ubi-homescreen-ubisoftplus-logotype.png",
@@ -124,16 +122,24 @@ const HeroSlider = () => {
       navButtonsAlwaysVisible={true}
       indicators={false}
       swipe={false}
-      NextIcon={
-        <button className="slider-arrow slider-arrow-right">
-          <FontAwesomeIcon icon={faAngleRight} />
-        </button>
-      }
-      PrevIcon={
-        <button className="slider-arrow slider-arrow-left">
-           <FontAwesomeIcon icon={faAngleLeft} />
-        </button>
-      }
+      navButtonsProps={{
+        style: {
+          backgroundColor: "rgba(229, 233, 234, 0.4)",
+          borderRadius: '0px 30px 30px 0px',
+          width: 60,
+          height: 60,
+          marginTop: '40vh',
+          
+        },
+      }}
+      navButtonsWrapperProps={{
+        style: {
+          bottom: "0",
+          top: "unset",
+          backgroundColor: "transparent",
+        },
+      }}
+      
     >
       {HeroData.map((item) => {
         return <HeroCard data={item} />;
