@@ -7,16 +7,17 @@
 
 .card-title{
     font-weight: 700;
-    height: 3em; 
+    height: 3em;
     @media only screen and (max-width: 600px) {
         font-size: small !important;
     }
 }
 
 .card-icon{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
+    filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(338deg) brightness(100%) contrast(10%);
 }
 
 .card-body{
@@ -66,6 +67,8 @@
     h2{
         font-weight: 700;
         font-size: 2.5rem;
+        color: #000; 
+
     }
 }
 

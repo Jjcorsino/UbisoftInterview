@@ -31,6 +31,7 @@
         margin: 0px 20px;
         text-align: center;
         align-items: stretch;
+        font-weight: 450;
     }
     li:hover{
         cursor: pointer;
@@ -69,4 +70,7 @@
     h4{
         text-decoration: underline;
     }
+}
+.mb-4, .my-4 {
+    margin-bottom: 3rem!important;
 }

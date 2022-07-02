@@ -20,11 +20,11 @@ export default function VideoSlider() {
             "image":"./assets/rollerchamps-trailer.png",
         },
         {
-            "title":"Rider Republic Showdown Trailer",
+            "title":"Riders Republic Showdown Trailer",
             "image":"./assets/riders-showdown-trailer.jpg",
         },
         {
-            "title":"Sprinter Cell Remake: Stepping Out of the Shadows",
+            "title":"Splinter Cell Remake: Stepping Out of the Shadows",
             "image":"./assets/sprinter-cell-trailer.png",
         },
     ]

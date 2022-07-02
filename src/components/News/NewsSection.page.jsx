@@ -13,20 +13,36 @@ export default function NewsSection() {
 
     // Hardcoded value of all news data to pass it in different section
     const NewsData = [
+        //Push new news data here..
+        {
+            title: "This Week at Ubisoft: Mario + Rabbids Sparks of Hope Coming This Fall, Rabbids: Party of Legends Out Now",
+            date: "July 1, 2022",
+            image: "./assets/ubi-news-thisweek-rabbids.jpg",
+        },
+        {
+            title: "Trackmania Launches New Summer Season For Free",
+            date: "July 1, 2022",
+            image: "./assets/trackmania-news-new-season.jpg",
+        },
+        {
+            title: "The Crew 2 Celebrates Its 4th Anniversary, Season 6 Episode 1 Coming July 6",
+            date: "June 30, 2022",
+            image: "./assets/crew-news-4th-anniversary.jpg",
+        },
         {
             title: "Play Rabbids: Party of Legends Today",
             date: "June 30, 2022",
             image: "./assets/rabbids-party-new.jpg",
         },
         {
-            title:"This week at Ubisoft: New Roller Champions Season, Hot Summer Sales Live Now",
-            date:"june 24, 2022",
-            image:"./assets/thisweek-ubinew.jpg",
-        },
-        {
             title: "Mario + Rabbids Sparks of Hope Coming to Switch October 20",
             date: "June 29, 2022",
             image: "./assets/mario+rabbids-new.png"
+        },
+        {
+            title:"This week at Ubisoft: New Roller Champions Season, Hot Summer Sales Live Now",
+            date:"june 24, 2022",
+            image:"./assets/thisweek-ubinew.jpg",
         },
         {
             title: "Star Trek: Prodigy Lands in Growtopia for Limited-Time Event",
@@ -86,7 +102,6 @@ export default function NewsSection() {
                     <li className="nav-item" onClick={()=>{
                         setFilterData("all")
                         setFilterStatus(false);
-                        
                         }}>
                         All news</li>
                     <li className="nav-item" onClick={(e)=>{
@@ -124,18 +139,19 @@ export default function NewsSection() {
                             />
                             <NewsCard 
                                 align = {!inverted}
-                                news = {NewsData[1]}
+                                news = {NewsData[3]}
                             />
                         </div>
                     </div>
+                    {/* Same order at ubinews */}
                      <div className="col-md-6 col-sm-12 p-0" >
                         <NewsCard
                             align = {!inverted}
-                            news = {NewsData[2]}
+                            news = {NewsData[1]}
                         />
                         <NewsCard
                             align = {!inverted}
-                            news = {NewsData[3]}
+                            news = {NewsData[2]}
                         />
                         <NewsCard
                             align = {!inverted}
@@ -146,6 +162,7 @@ export default function NewsSection() {
                 </div>
             )
             }
+
             {/* Filter is on and display post with list */}
             {filterStatus&&(
                 <div className="container">
@@ -160,7 +177,7 @@ export default function NewsSection() {
                             return(
                                 <div className="col-md-6 col-sm-12 p-0" >
                                     <NewsCard 
-                                        align={trueAlign.includes(i)}
+                                        align={trueAlign}
                                         news={data}
                                     />
                                     
