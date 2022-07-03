@@ -1,4 +1,36 @@
 .social-section{
     height: 5.5vh;
     background: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #c0c0c0;
+    font-size: 1rem;
+    margin: auto;
+}
+.social-text{
+    margin-left: 13%;
+}
+.social-text h5{
+    font-size: .9rem;
+    font-weight: 100;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+.social-icons{
+    margin-left: 20%;
+}
+.social-icons i{
+    justify-content: space-between;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+}
+.social-icons i:hover{
+    background-color: #b3b3b3;
 }
