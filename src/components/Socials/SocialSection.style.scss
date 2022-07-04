@@ -7,9 +7,15 @@
     color: #c0c0c0;
     font-size: 1rem;
     margin: auto;
+    @media (max-width: 960px) {
+        height: auto;
+     }
 }
 .social-text{
     margin-left: 13%;
+    @media (max-width: 960px) {
+        margin-left: 5%;
+     }
 }
 .social-text h5{
     font-size: .9rem;
@@ -21,6 +27,9 @@
 }
 .social-icons{
     margin-left: 20%;
+    @media (max-width: 960px) {
+        margin-left: 5%;
+     }
 }
 .social-icons i{
     justify-content: space-between;
@@ -30,6 +39,9 @@
     background-color: #fff;
     color: #000;
     align-items: center;
+    @media (max-width: 960px) {
+        margin: 0 5px;
+     }
 }
 .social-icons i:hover{
     background-color: #b3b3b3;

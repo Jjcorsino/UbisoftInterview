@@ -26,8 +26,8 @@ To do:
 - [ ] Add Socials section
 - [ ] Add Footer section
 - [ ] Update css
-- [ ] Responsive design
-- [ ] Mobile view version 2
+- [x] Responsive design
+- [x] Mobile view version 2
 
 
 
@@ -37,6 +37,11 @@ To do:
 ## Web view (New version)
 
 ![](/screenshots/version2.png)
+
+
+## Mobile View (New version)
+![](/screenshots/mobile.view-new.png)
+
 
 <hr>
 
