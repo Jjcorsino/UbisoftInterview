@@ -15,6 +15,26 @@ export default function NewsSection() {
     const NewsData = [
         //Push new news data here..
         {
+            title: 'Skull and Bones Offers Unexpected Opportunities for Open-World Plunder',
+            date: 'July 7, 2022',
+            image: './assets/UN_S_B_Comeback_Screenshot2_960x540.png',
+        },
+        {
+            title: 'Skull and Bones Coming November 8',
+            date: 'July 7, 2022',
+            image: './assets/ubinews-skullandbones-comeback-header.jpg',
+        },
+        {
+            title: 'The Division Resurgence Announced',
+            date: 'July 6, 2022',
+            image: './assets/Classes.png',
+        },
+        {
+            title:"Ubisoft Forward Returns July 7 with Skull and Bones; Multi-Game Showcase Coming September 10",
+            date: "July 5, 2022",
+            image: "./assets/UbisoftFWD_News_Header.png",
+        },
+        {
             title: "This Week at Ubisoft: Mario + Rabbids Sparks of Hope Coming This Fall, Rabbids: Party of Legends Out Now",
             date: "July 1, 2022",
             image: "./assets/ubi-news-thisweek-rabbids.jpg",

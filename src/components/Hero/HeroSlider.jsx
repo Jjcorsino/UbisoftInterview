@@ -7,6 +7,28 @@ const HeroSlider = () => {
   // Hardcoded value of all heros in array
   const HeroData = [
     {
+      tittle: "SKULL AND BONES",
+      subtittle:
+        "Experience a brand-new take on piracy in Skull and Bones. Long live piracy!",
+      buttonOne: "Watch trailer",
+      buttonTwo: "pre-order",
+      game: "skull-and-bones",
+      imageBackground: "./assets/ubi-homescreen-skull-and-bones-bg-desktop-1080.jpg",
+      logoGame: "./assets/ubi-homescreen-logo-skull-and-bones.png",
+
+    },
+    {
+      tittle: "THE DIVISION IS COMING TO MOBILE",
+      subtittle:
+        "Register today for a chance to play The Division Resurgence early and receive all the latest updates.",
+      buttonOne: "Watch trailer",
+      buttonTwo: "register now",
+      game: "the-division-resurgence",
+      imageBackground: "./assets/ubi-homescreen-division-mobile-bg-desktop.png",
+      logoGame: "./assets/ubi-homescreen-logo-division-mobile.png",
+
+    },
+    {
       tittle: "THE RABBIDS ARE READY TO PARTY!",
       subtittle:
         "Embark on a legendary journey filled with 50 multiplayer minigames in Rabbids: Party of Legends.",
@@ -113,6 +135,16 @@ const HeroSlider = () => {
       game: "roller-champions",
       imageBackground: "./assets/roller-champions.png",
       logoGame: "./assets/ubi-homescreen-logo-rollerchampions.png",
+    },
+    {
+      tittle: "SEASON 6 EPISODE 1: DOMINION FORSBERG",
+      subtittle:
+        "Time as come to go back on the track! In this new season of The Crew 2, meet Chris Forsberg, three-time world drift champion, and his Forsberg Racing team.",
+      buttonOne: "Learn More",
+      buttonTwo: "Play for free",
+      game: "the-crew-2",
+      imageBackground: "./assets/ubi-homescreen-the-crew-two-bg-desktop.png",
+      logoGame: "./assets/ubi-homescreen-logo-tc2.png",
     },
   ];
 

@@ -13,8 +13,8 @@ export default function InsideCardFeatured() {
             image:"./assets/ubi-inside-scalar.png"
         },
         {
-            title: "cameron lee named rainbow six vp, executive producer",
-            image: "./assets/ubi-inside-cameron-lee.png"
+            title: "Ubisoft Forward - Saturday, September 10, 2022",
+            image: "./assets/UbisoftFWD_News_Header.png"
         }
     ]
 

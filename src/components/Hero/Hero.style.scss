@@ -299,4 +299,57 @@
         color: #fff;
     }
 }
-
+.hero-btn-one-the-division-resurgence, .hero-btn-two-the-division-resurgence{
+    background-color: rgb(255, 106, 19);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 246px;
+    height: 54px;
+    border-radius: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    &:hover{
+        background-color: rgb(248, 147, 88);
+        color: #fff;
+    }
+}
+.hero-btn-one-skull-and-bones, .hero-btn-two-skull-and-bones{
+    background-color: rgb(240, 178, 28);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 246px;
+    height: 54px;
+    border-radius: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    &:hover{
+        background-color: rgb(247, 201, 94);
+        color: #fff;
+    }
+}
+.hero-btn-one-the-crew-2, .hero-btn-two-the-crew-2{
+    background-color: rgb(191, 53, 46);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 246px;
+    height: 54px;
+    border-radius: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    &:hover{
+        background-color: rgb(192, 97, 92);
+        color: #fff;
+    }
+}
