@@ -8,6 +8,7 @@
 .card-title{
     font-weight: 700;
     height: 3em;
+    font-size: 1.125rem;
     @media only screen and (max-width: 600px) {
         font-size: small !important;
     }
@@ -19,6 +20,14 @@
     margin-right: 5px;
     filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(338deg) brightness(100%) contrast(10%);
 }
+.card-text{
+    height: 20px;
+    margin-right: 5px;
+    filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(338deg) brightness(100%) contrast(10%);
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
 
 .card-body{
     background-color: white;
@@ -46,6 +55,7 @@
 .game-card{
     margin: 15px;
     height: auto;
+    width: 210px;
     
 }
 

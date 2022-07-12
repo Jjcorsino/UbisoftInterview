@@ -14,6 +14,22 @@ export default function NewsSection() {
     // Hardcoded value of all news data to pass it in different section
     const NewsData = [
         //Push new news data here..
+       
+        {
+            title: 'How the Skull and Bones Studio is Building A Culture Of Creativity',
+            date: 'July 8, 2022',
+            image: './assets/Ubisoft_Singapore960x540.jpg',
+        },
+        {
+            title: 'This Week at Ubisoft: Skull and Bones Coming November 8, The Division Resurgence Announced',
+            date: 'July 8, 2022',
+            image: './assets/SB_Comeback_thisweek.jpg',
+        },
+        {
+            title: 'Roller Champions Accesibility Spotlight',
+            date: 'July 8, 2022',
+            image: './assets/roller.champions-8july-new.jpg',
+        },
         {
             title: 'Skull and Bones Offers Unexpected Opportunities for Open-World Plunder',
             date: 'July 7, 2022',
