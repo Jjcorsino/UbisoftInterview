@@ -2,3 +2,130 @@
     height: 41.5vh;
     background-color: #1d1e22;
 }
+
+.footer-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+.footer-section-container-left{
+    height: 80%;
+    width: 20%;
+    margin: auto;
+}
+
+.footer-section-container-left-logo{
+    width: 80%;
+    margin: auto;
+    img{
+        width: 50%;
+    }
+}
+.footer-section-container-left-links{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    li{
+        list-style: none;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        margin: auto;
+    }
+    h5{
+        font-size: .7rem;
+        color: #c0c0c0;
+    }
+}
+
+.footer-section-container-left-links-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: auto;
+    li{
+        list-style: none;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        margin: auto;
+    }
+    h5{
+        font-size: .7rem;
+        color: #c0c0c0;
+    }
+}
+
+.footer-section-container-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+}
+
+.footer-section-container-middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+}
+.footer-section-container-middle-container-left, .footer-section-container-middle-container-mid, .footer-section-container-middle-container-right{
+    height: 100%;
+    width: 30%;
+    margin: auto;
+}
+
+.footer-section-container-middle-container-left-list, .footer-section-container-middle-container-mid-list, .footer-section-container-middle-container-right-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    margin: auto;
+    li{
+        list-style: none;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        margin: auto;
+    }
+    h5{
+        font-size: .7rem;
+        color: #c0c0c0;
+    }
+}
+
+.footer-section-container-right{
+    height: 80%;
+    width: 20%;
+    margin: auto;
+}
