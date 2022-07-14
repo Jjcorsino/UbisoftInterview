@@ -9,8 +9,8 @@ const HeroCard = (props) => {
     backgroundPosition: 'cover',
     backgroundRepeat: 'no-repeat',
   }
-  const buttonStyle = `hero-btn-one-${props.data.game}` 
-  const buttonStyleTwo = `hero-btn-two-${props.data.game}` 
+  const buttonStyle = `hero-btn-one ${props.data.game}` 
+  const buttonStyleTwo = `hero-btn-two ${props.data.game}` 
 
   
   return (

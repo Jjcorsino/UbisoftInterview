@@ -1,355 +1,189 @@
-.hero-section{
-    background-color: #f5f5f5;
-    height: 100vh;
+.hero-section {
+  background-color: #f5f5f5;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 768px) {
     padding: 0;
     margin: 0;
     position: relative;
     overflow: hidden;
-    @media (min-width: 768px) {
-        padding: 0;
-        margin: 0;
-        position: relative;
-        overflow: hidden;
-    }
-    
+  }
 }
-.container-hero{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
+.container-hero {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-card{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30vh;
-    @media (max-width: 960px) {
-        background-size: cover;
-        background-position: center;
-    }
+.hero-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30vh;
+  @media (max-width: 960px) {
+    background-size: cover;
+    background-position: center;
+  }
 }
-.hero-tittle > h1{
-    color: #fff;
-    font-size: 3.5rem;
-    line-height: 3.125rem;
-    font-weight: 700;
-    margin: 0;
+.hero-tittle > h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  text-align: center;
+  text-shadow: 0 2px 10px #000;
+  padding-bottom: 20px;
+}
+.hero-sub-tittle {
+  width: 75%;
+  margin: auto;
+  color: #fff;
+  h2 {
+    font-size: 1.5rem;
     padding: 0;
-    padding-top: 40px;
     text-align: center;
     text-shadow: 0 2px 10px #000;
-    padding-bottom: 20px;
+  }
 }
-.hero-sub-tittle{
-    width: 75%;
-    margin: auto;
+.hero-buttons {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 60px;
+}
+.hero-btn-one,
+.hero-btn-two {
+  background-color: rgb(61, 36, 156);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 246px;
+  height: 54px;
+  border-radius: 2rem;
+  margin: 10px;
+  text-align: center;
+  border-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  &:hover {
+    background-color: rgb(89, 66, 182);
     color: #fff;
-    h2{
-        font-size: 1.5rem;
-        padding: 0;
-        text-align: center; 
-        text-shadow: 0 2px 10px #000;
-
-    }
+  }
 }
-.hero-buttons{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin-top: 60px;
-    
+.hero-image {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 30vh;
 }
-.hero-btn-two{
-    background-color: rgb(61, 36, 156);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(89, 66, 182);
-        color: #fff;
-    }
+.hero-logo {
+  padding-top: 40%;
 }
-.hero-image{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    height: 30vh;
+.Rabbids {
+  background-color: rgb(222, 23, 2);
+  &:hover {
+    background-color: rgb(219, 72, 56);
+  }
 }
-.hero-logo{
-    padding-top: 40%;
+.ubisoft-store {
+  background-color: rgb(255, 13, 120);
+  &:hover {
+    background-color: rgb(243, 88, 158);
+  }
 }
-.hero-btn-one-Rabbids, .hero-btn-two-Rabbids{
-    background-color: rgb(222, 23, 2);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(219, 72, 56);
-        color: #fff;
-    }
-}
-.hero-btn-one-ubisoft-store{
-    background-color: rgb(255, 13, 120);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(243, 88, 158);
-        color: #fff;
-    }
-}
-.hero-btn-two-ubisoft-store{
-    visibility: hidden;
-    background-color: transparent;
+.hero-btn-two.ubisoft-store {
+  visibility: hidden;
+  background-color: transparent;
 }
 
-.hero-btn-one-assassins-creed, .hero-btn-two-assassins-creed{
-    background-color: rgb(137, 109, 61);
+.assassins-creed {
+  background-color: rgb(137, 109, 61);
+  &:hover {
+    background-color: rgb(138, 116, 78);
     color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(137, 109, 61);
-        color: #fff;
-    }
+  }
 }
-.hero-btn-one-riders-republic, .hero-btn-two-riders-republic{
-    background-color: rgb(236, 180, 58);
+.riders-republic {
+  background-color: rgb(236, 180, 58);
+  &:hover {
+    background-color: rgb(228, 190, 108);
+  }
+}
+.rainbow-six-siege {
+  background-color: rgb(96, 205, 176);
+  &:hover {
+    background-color: rgb(120, 207, 184);
+  }
+}
+.just-dance {
+  background-color: rgb(86, 20, 174);
+  &:hover {
+    background-color: rgb(108, 62, 168);
+  }
+}
+.rainbow-six-extraction {
+  background-color: rgb(13, 46, 63);
+  &:hover {
+    background-color: rgb(60, 127, 160);
+  }
+}
+.far-cry-6 {
+  background-color: rgb(219, 102, 4);
+  &:hover {
+    background-color: rgb(201, 127, 67);
+  }
+}
+.brawhalla {
+  background-color: rgb(255, 13, 120);
+  &:hover {
+    background-color: rgb(243, 106, 168);
+  }
+}
+.ubisoft-plus {
+  background-color: rgb(66, 142, 224);
+  &:hover {
+    background-color: rgb(112, 170, 231);
     color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(236, 180, 58);
-        color: #fff;
-    }
+  }
 }
-.hero-btn-one-rainbow-six-siege, .hero-btn-two-rainbow-six-siege{
-    background-color: rgb(96, 205, 176);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(96, 205, 176);
-        color: #fff;
-    }
+
+.hero-btn-two.ubisoft-plus {
+  visibility: hidden !important;
+  background-color: transparent !important;
 }
-.hero-btn-one-just-dance, .hero-btn-two-just-dance{
-    background-color: rgb(86, 20, 174);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(86, 20, 174);
-        color: #fff;
-    }
+
+.roller-champions {
+  background-color: rgb(61, 36, 156);
+  &:hover {
+    background-color: rgb(86, 70, 153);
+  }
 }
-.hero-btn-one-rainbow-six-extraction, .hero-btn-two-rainbow-six-extraction{
-    background-color: rgb(13, 46, 63);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(13, 46, 63);
-        color: #fff;
-    }
+.the-division-resurgence {
+  background-color: rgb(255, 106, 19);
+  &:hover {
+    background-color: rgb(248, 147, 88);
+  }
 }
-.hero-btn-one-far-cry-6, .hero-btn-two-far-cry-6{
-    background-color: rgb(219, 102, 4);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(219, 102, 4);
-        color: #fff;
-    }
+.skull-and-bones {
+  background-color: rgb(240, 178, 28);
+  &:hover {
+    background-color: rgb(247, 201, 94);
+  }
 }
-.hero-btn-one-brawhalla, .hero-btn-two-brawhalla{
-    background-color: rgb(255, 13, 120);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(255, 13, 120);
-        color: #fff;
-    }
-}
-.hero-btn-one-ubisoft-plus{
-    background-color: rgb(66, 142, 224);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(66, 142, 224);
-        color: #fff;
-    }
-}
-.hero-btn-two-ubisoft-plus{
-    visibility: hidden;
-    background-color: transparent;
-}
-.hero-btn-one-roller-champions, .hero-btn-two-roller-champions{
-    background-color: rgb(61, 36, 156);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(61, 36, 156);
-        color: #fff;
-    }
-}
-.hero-btn-one-the-division-resurgence, .hero-btn-two-the-division-resurgence{
-    background-color: rgb(255, 106, 19);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(248, 147, 88);
-        color: #fff;
-    }
-}
-.hero-btn-one-skull-and-bones, .hero-btn-two-skull-and-bones{
-    background-color: rgb(240, 178, 28);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(247, 201, 94);
-        color: #fff;
-    }
-}
-.hero-btn-one-the-crew-2, .hero-btn-two-the-crew-2{
-    background-color: rgb(191, 53, 46);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 246px;
-    height: 54px;
-    border-radius: 2rem;
-    margin: 10px;
-    text-align: center;
-    border-color: transparent;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    &:hover{
-        background-color: rgb(192, 97, 92);
-        color: #fff;
-    }
+.the-crew-2 {
+  background-color: rgb(191, 53, 46);
+  &:hover {
+    background-color: rgb(192, 97, 92);
+  }
 }
