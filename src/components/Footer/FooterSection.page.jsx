@@ -38,12 +38,24 @@ const FooterSection= () => {
                 <li className='footer-section-container-middle-container-right-list-item'><p>about us</p></li>
                 <li className='footer-section-container-middle-container-right-list-item'><p>careers</p></li>
                 <li className='footer-section-container-middle-container-right-list-item'><p>locations</p></li>
-
               </ul>
             </div>
           </div>
         </div>
-        <div className='footer-section-container-right'></div>
+        <div className='footer-section-container-right'>
+          <div className='footer-section-container-right-container'>
+            <div className='footer-section-container-right-container-up'>
+              <p className='language'>English</p>
+            </div>
+            <div className='footer-section-container-right-container-mid'>
+              <img src='https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3TWaCi5CyuZBRpzsRP1iy/6384003e7b534b4962db554a21c696bb/esrb-privacy-footer.jpg' alt='logo' />
+            </div>
+            <div className='footer-section-container-right-container-down'>
+              <p>© 2022 Ubisoft Entertainment. All Rights Reserved.<br></br>
+              Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
