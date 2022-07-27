@@ -7,6 +7,25 @@ const HeroSlider = () => {
   // Hardcoded value of all heros in array
   const HeroData = [
     {
+      tittle: "SEASON 3 - SUMMER BREAK",
+      subtittle:
+        "Participate in Project Rebirth, collect seeds and help reforest the Republic!",
+      buttonOne: "learn more",
+      buttonTwo: "buy now",
+      game: "riders-republic",
+      imageBackground: "./assets/ubi-homescreen-rr-bg-desktop.png",
+      logoGame: "./assets/ubi-homescreen-ridersrepublic-logotype.png",
+    },
+    {
+      tittle: "BRAWLHALLA X ASSASSIN'S CREED",
+      subtittle: "Assassin’s Creed’s Ezio and Eivor Join Brawlhalla!",
+      buttonOne: "watch trailer",
+      buttonTwo: "play now",
+      game: "brawhalla",
+      imageBackground: "./assets/ubi-homescreen-brawhalla-bg-desktop.jpg",
+      logoGame: "./assets/ubi-homescreen-brawhalla-logotype.png",
+    },
+    {
       tittle: "SKULL AND BONES",
       subtittle:
         "Experience a brand-new take on piracy in Skull and Bones. Long live piracy!",
@@ -59,16 +78,6 @@ const HeroSlider = () => {
       logoGame: "./assets/ubi-homescreen-ac15-logotype.png",
     },
     {
-      tittle: "RIDERS REPUBLIC SEASON 2 IS LIVE!",
-      subtittle:
-        "Face off in a new 6v6 mode and claim your victory in the Showdown Arena. Play Now!",
-      buttonOne: "learn more",
-      buttonTwo: "buy now",
-      game: "riders-republic",
-      imageBackground: "./assets/ubi-homescreen-rr-bg-desktop.png",
-      logoGame: "./assets/ubi-homescreen-ridersrepublic-logotype.png",
-    },
-    {
       tittle: "OPERATION VECTOR GLARE",
       subtittle:
         "Rainbow Six Siege is proud to present the second season of Year 7, Operation Vector Glare!",
@@ -108,18 +117,9 @@ const HeroSlider = () => {
       logoGame: "./assets/ubi-homescreen-fc6-logotype.png",
     },
     {
-      tittle: "BATTLE PASS SEASON 6 IS LIVE",
-      subtittle: "Play now and unlock 85 tiers of magical greatness!",
-      buttonOne: "watch now",
-      buttonTwo: "play now",
-      game: "brawhalla",
-      imageBackground: "./assets/ubi-homescreen-brawhalla-bg-desktop.png",
-      logoGame: "./assets/ubi-homescreen-brawhalla-logotype.png",
-    },
-    {
-      tittle: "JOIN UBISOFT+",
+      tittle: "PLAY SKULL AND BONES AT LAUNCH WITH UBISOFT+!",
       subtittle:
-        "Celebrate 15 years of legendary, history-bending adventures. Play all of the Assassin's Creed games with Ubisoft+!",
+        " Available Day 1 of release in its most Premium Edition",
       buttonOne: "subscribe now",
       buttonTwo: "",
       game: "ubisoft-plus",
