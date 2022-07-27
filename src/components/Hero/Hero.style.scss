@@ -98,6 +98,10 @@
 }
 .ubisoft-store {
   background-color: rgb(255, 13, 120);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   &:hover {
     background-color: rgb(243, 88, 158);
   }
@@ -146,12 +150,18 @@
 }
 .brawhalla {
   background-color: rgb(221, 121, 23);
+  
   &:hover {
     background-color: rgb(219, 154, 88);
   }
 }
 .ubisoft-plus {
   background-color: rgb(66, 142, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
   &:hover {
     background-color: rgb(112, 170, 231);
     color: #fff;

@@ -123,7 +123,7 @@ const HeroSlider = () => {
       buttonOne: "subscribe now",
       buttonTwo: "",
       game: "ubisoft-plus",
-      imageBackground: "./assets/ubi-homescreen-ubiplus-bg-desktop.jpg",
+      imageBackground: "./assets/ubi-homescreen-ubisoft_plus-skullandbones-bg-desktop.png",
       logoGame: "./assets/ubi-homescreen-ubisoftplus-logotype.png",
     },
     {
